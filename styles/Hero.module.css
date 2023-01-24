@@ -1,7 +1,7 @@
 .headline {
-  z-index: 10;
+  z-index: 15;
   color: rgb(255, 255, 255);
-  -webkit-text-stroke: 1.4px;
+  -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: black;
   font-family: Georgia;
   font-weight: bold;
@@ -9,9 +9,9 @@
   padding-left: 20px;
 }
 .tagline {
-  z-index: 10;
+  z-index: 15;
   color: rgb(246, 245, 245);
-  -webkit-text-stroke: 1.4px;
+  -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: black;
   font-family: Georgia;
   font-weight: bold;
@@ -24,7 +24,7 @@
   justify-content: flex-start;
   align-items: flex-end;
   width: 100vw;
-  z-index: 10;
+  z-index: 15;
   color: rgb(255, 255, 255);
   -webkit-text-stroke: 0.7px;
   -webkit-text-stroke-color: white;
@@ -43,31 +43,32 @@
 }
 
 .heroimage {
-  overflow: hidden;
+  z-index: 10;
+  overflow-y: hidden;
   position: absolute;
   display: inline;
   inset: 0;
-  height: 100vh;
+  height: auto;
   width: 100vw;
-  background: url('/house5.jpg') no-repeat center;
+  background: url('/house4.jpg') no-repeat center;
   background-size: cover;
 }
 .box {
   overflow: hidden;
-  z-index: 5;
+  z-index: 10;
   position: absolute;
   inset: 0;
   height: 100vh;
-  background: rgb(255, 253, 253) no-repeat center;
+  background: rgb(243, 243, 243) no-repeat center;
   background-size: contain;
 }
 
 @media (max-width: 1000px) {
   .headline {
-    font-size: clamp(2em, 2.6em + 20%, 4em);
+    font-size: clamp(2em, 3em + 20%, 4em);
   }
   .tagline {
-    font-size: clamp(1em, 1.6em + 20%, 3em);
+    font-size: clamp(1em, 2em + 20%, 3em);
   }
   .nav {
     padding-right: 20px;
@@ -80,6 +81,8 @@
   }
   .tagline {
     font-size: clamp(2em, 4em + 20%, 5em);
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: black;
   }
   .nav {
     font-size: clamp(1.2em, 1.7em + 20%, 2em);

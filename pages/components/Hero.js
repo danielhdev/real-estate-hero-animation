@@ -22,13 +22,13 @@ export const Hero = () => {
     const tagline = {
         initial: {
             opacity: 0,
-            x: 30,
         },
         animate: {
             opacity: 1,
-            x: 0,
+
             transition: {
-                duration: 4,
+                delay: 2,
+                duration: 2,
                 ease: 'easeOut'
             }
 
@@ -89,7 +89,7 @@ export const Hero = () => {
 
     return (
         <main className="h-screen flex-col
-        flex justify-center items-start relative overflow-x-hidden">
+        flex justify-end items-start relative overflow-x-hidden">
             <motion.div className={herostyles.headline}
                 variants={headline}
                 initial='initial'
