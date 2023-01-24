@@ -1,27 +1,87 @@
 .headline {
   z-index: 10;
   color: rgb(255, 255, 255);
-  -webkit-text-stroke: 1.2px;
+  -webkit-text-stroke: 1.4px;
   -webkit-text-stroke-color: black;
-  font-family: Oxygen;
+  font-family: Georgia;
   font-weight: bold;
   font-size: clamp(2em, 3.6em + 20%, 4em);
   padding-left: 20px;
 }
-.heroimage {
+.tagline {
+  z-index: 10;
+  color: rgb(246, 245, 245);
+  -webkit-text-stroke: 1.4px;
+  -webkit-text-stroke-color: black;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: clamp(2em, 3.6em + 20%, 4em);
+  padding-left: 20px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100vw;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke-color: white;
+  font-family: Cantarell;
+
   position: absolute;
+  inset: 0;
+  list-style: none;
+  padding-right: 50px;
+}
+.nav > li:hover {
+  color: rgb(7, 255, 7);
+  -webkit-text-stroke: 0.2px;
+  -webkit-text-stroke-color: lime;
+  cursor: pointer;
+}
+
+.heroimage {
+  overflow: hidden;
+  position: absolute;
+  display: inline;
   inset: 0;
   height: 100vh;
   width: 100vw;
-  background: url('/house1.jpg') no-repeat center;
+  background: url('/house5.jpg') no-repeat center;
   background-size: cover;
 }
 .box {
+  overflow: hidden;
   z-index: 5;
   position: absolute;
   inset: 0;
   height: 100vh;
-  width: 100vw;
-  background: rgb(193, 193, 193) no-repeat center;
-  background-size: cover;
+  background: rgb(255, 253, 253) no-repeat center;
+  background-size: contain;
+}
+
+@media (max-width: 1000px) {
+  .headline {
+    font-size: clamp(2em, 2.6em + 20%, 4em);
+  }
+  .tagline {
+    font-size: clamp(1em, 1.6em + 20%, 3em);
+  }
+  .nav {
+    padding-right: 20px;
+    font-size: clamp(1em, 1.4em + 20%, 1.6em);
+  }
+}
+@media (min-width: 1000px) {
+  .headline {
+    font-size: clamp(2em, 5.6em + 20%, 6em);
+  }
+  .tagline {
+    font-size: clamp(2em, 4em + 20%, 5em);
+  }
+  .nav {
+    font-size: clamp(1.2em, 1.7em + 20%, 2em);
+  }
 }
