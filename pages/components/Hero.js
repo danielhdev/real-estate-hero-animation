@@ -85,8 +85,6 @@ const Hero = () => {
         },
 
     }
-
-
     return (
         <main className="h-screen flex-col
         flex justify-end items-start relative overflow-x-hidden">
