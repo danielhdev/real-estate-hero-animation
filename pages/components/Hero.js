@@ -3,7 +3,7 @@ import herostyles from '@/styles/Hero.module.css'
 import { motion } from 'framer-motion'
 
 
-export const Hero = () => {
+const Hero = () => {
     const headline = {
         initial: {
             scale: 1.1,
@@ -129,4 +129,4 @@ export const Hero = () => {
         </main>
     )
 }
-
+export default Hero
