@@ -66,25 +66,27 @@
 @media (max-width: 1000px) {
   .headline {
     font-size: clamp(2em, 3em + 20%, 4em);
+    line-height: 1em;
   }
   .tagline {
     font-size: clamp(1em, 2em + 20%, 3em);
   }
   .nav {
-    padding-right: 20px;
-    font-size: clamp(1em, 1.4em + 20%, 1.6em);
+    padding-right: 10px;
+    font-size: clamp(1.2em, 1.5em, 2em);
   }
 }
 @media (min-width: 1000px) {
   .headline {
     font-size: clamp(2em, 5.6em + 20%, 6em);
+    line-height: 4rem;
   }
   .tagline {
-    font-size: clamp(2em, 4em + 20%, 5em);
+    font-size: clamp(2em, 3em, 4em);
     -webkit-text-stroke: 1.5px;
     -webkit-text-stroke-color: black;
   }
   .nav {
-    font-size: clamp(1.2em, 1.7em + 20%, 2em);
+    font-size: clamp(1.2em, 1.5em, 2em);
   }
 }
