@@ -45,3 +45,47 @@ body {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }
+
+.bgimage {
+  background: url('/house2.jpg') no-repeat center;
+  background-size: cover;
+}
+.navsize {
+  font-size: clamp(1rem, 1vw + 0.6rem, 3rem);
+  font-family: 'drugsreg', sans-serif;
+  z-index: 999;
+}
+.headersize {
+  font-size: 8vw;
+  font-family: 'libre_bold', serif;
+  -webkit-text-stroke: rgb(0, 36, 52);
+  -webkit-text-stroke-width: 1px;
+  line-height: 3rem;
+}
+li {
+  padding-left: 2vw;
+  font-weight: bold;
+  -webkit-text-stroke: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.125px;
+  cursor: pointer;
+}
+li:hover {
+  color: rgb(35, 185, 255);
+}
+@media (max-width: 600px) {
+  .headersize {
+    font-size: 10vw;
+    -webkit-text-stroke: rgb(0, 36, 52);
+    -webkit-text-stroke-width: 0.6px;
+  }
+  .navsize {
+    font-size: clamp(1rem, 2vw + 0.6rem, 3rem);
+    font-family: 'drugsreg', sans-serif;
+    z-index: 999;
+  }
+  li {
+    padding-left: 8vw;
+    -webkit-text-stroke: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.1px;
+  }
+}
