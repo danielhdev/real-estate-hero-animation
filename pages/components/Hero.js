@@ -19,7 +19,7 @@ const Hero = () => {
 
         },
     }
-    const tagline = {
+    const headline2 = {
         initial: {
             opacity: 0,
         },
@@ -86,8 +86,17 @@ const Hero = () => {
 
     }
     return (
-        <main className="h-screen flex-col
+        <main className="h-[100dvh] flex-col
         flex justify-end items-start relative overflow-x-hidden">
+            <motion.div className={herostyles.headline2}
+                variants={headline2}
+                initial='initial'
+                animate='animate'
+            >
+                Real Estate
+            </motion.div >
+
+
             <motion.div className={herostyles.headline}
                 variants={headline}
                 initial='initial'
@@ -95,13 +104,7 @@ const Hero = () => {
             >
                 Michaels & Partners
             </motion.div >
-            <motion.div className={herostyles.tagline}
-                variants={tagline}
-                initial='initial'
-                animate='animate'
-            >
-                Real Estate
-            </motion.div >
+
             <motion.div className={herostyles.nav}
                 variants={nav}
                 initial='initial'
