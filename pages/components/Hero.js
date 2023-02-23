@@ -82,8 +82,8 @@ const Hero = () => {
                 Michaels & Partners
             </motion.div >
 
-            <motion.div className="list-none text-zinc-50 navsize w-[80%]
-             absolute right-[2vw] top-[2vw] flex flex-row items-end justify-end border-b-[1px] border-zinc-50 
+            <motion.div className="list-none text-zinc-50 navsize w-full
+             absolute md:right-[2vw] top-[2vw] flex flex-row items-center md:justify-end border-b-[1px] border-zinc-50 
              border-solid"
                 variants={nav}
                 initial='initial'
@@ -101,7 +101,6 @@ const Hero = () => {
                 animate='animate'
             >
                 <li>Real Estate</li>
-                <li>Mediterranean</li>
                 <li>France</li>
                 <li>Italy</li>
                 <li>Spain</li>
