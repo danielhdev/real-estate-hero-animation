@@ -74,7 +74,7 @@ const Hero = () => {
         <main className="h-screen flex-col 
         flex justify-end items-start relative overflow-x-hidden">
             <motion.div className="headersize text-zinc-50 absolute
-            bottom-[12vh] left-[2vw] z-40"
+            bottom-[15vh] left-[2vw] z-40"
                 variants={headline}
                 initial='initial'
                 animate='animate'
@@ -89,8 +89,9 @@ const Hero = () => {
                 initial='initial'
                 animate='animate'
             >
-                <li>Offers</li>
-                <li>About</li>
+                <li>Buy</li>
+                <li>Sell</li>
+                <li>About Us</li>
                 <li>Contact</li>
             </motion.div >
             <motion.div className="list-none text-zinc-50 navsize w-full
@@ -100,6 +101,7 @@ const Hero = () => {
                 animate='animate'
             >
                 <li>Real Estate</li>
+                <li>Mediterranean</li>
                 <li>France</li>
                 <li>Italy</li>
                 <li>Spain</li>

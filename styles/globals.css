@@ -51,7 +51,7 @@ body {
   background-size: cover;
 }
 .navsize {
-  font-size: clamp(1rem, 1vw + 0.6rem, 3rem);
+  font-size: clamp(1rem, 1vw + 0.4rem, 3rem);
   font-family: 'drugsreg', sans-serif;
   z-index: 999;
 }
