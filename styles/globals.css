@@ -41,7 +41,6 @@
 html,
 body {
   min-height: 100%;
-  max-width: 100%;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
 }

@@ -71,7 +71,7 @@ const Hero = () => {
 
     }
     return (
-        <main className="h-screen flex-col 
+        <main className="h-[100dvh] flex-col 
         flex justify-end items-start relative overflow-x-hidden">
             <motion.div className="headersize text-zinc-50 absolute
             bottom-[15vh] left-[2vw] z-40"
@@ -82,7 +82,7 @@ const Hero = () => {
                 Michaels & Partners
             </motion.div >
 
-            <motion.div className="list-none text-zinc-50 navsize w-full
+            <motion.div className="list-none text-zinc-50 navsize w-full bg-zinc-50/10
              absolute md:right-[2vw] top-[2vw] flex flex-row items-center md:justify-end border-b-[1px] border-zinc-50 
              border-solid"
                 variants={nav}
